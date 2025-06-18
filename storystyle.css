@@ -1,0 +1,42 @@
+/* Import Open Sans from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+/* Apply styles to the whole page */
+body {
+  font-family: 'Open Sans', sans-serif;
+  color: #000000;              /* Black text */
+  background-color: #f2f2f2;   /* Light gray background */
+  margin: 0;
+  padding: 20px;
+}
+
+/* Optional: Add some basic styling for links and headers */
+h1, h2, h3 {
+  color: #000;
+  margin-top: 0;
+}
+
+a {
+  color: #0000ee; /* Standard link blue */
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+  }
+.bank-balance {
+  font-weight: bold;
+}
+
+.positive {
+  color: green;
+}
+
+.negative {
+  color: red;
+}
+.bank-balance.mustard {
+  color: #d4af37; /* Mustard yellow / gold tone */
+  font-weight: bold;
+}
+

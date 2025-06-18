@@ -1,0 +1,42 @@
+/* default to border-box */
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+/* adjust typography defaults */
+body {
+  margin: 1rem;
+  font-family: Arial, sans-serif;
+  line-height: 1.5;
+  background-color: lightblue;
+  border: 10px solid darkblue;
+  padding: 1rem;
+}
+
+/* images and videos max out at full width */
+img,
+video {
+  height: auto;
+  max-width: 100%;
+ } 
+.bank-balance {
+  font-weight: bold;
+}
+
+.positive {
+  color: green;
+}
+
+.negative {
+  color: red;
+}
+
+.mustard {
+  color: #d4af37;
+}
+
+
