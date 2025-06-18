@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>JAIL!</title>
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+    }
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <img id="introImage" src="https://cdn.glitch.global/cb7d669d-fb44-492e-95de-9bed7e896bf8/HW9%20INTRO.jpg?v=1746725165089" usemap="#image-map" alt="Intro Image">
+
+  <map name="image-map">
+    <area shape="poly" coords="859,1218,1117,594,1415,716,1166,1336" href="start.html" alt="Start" title="Go to Start">
+  </map>
+
+  <script>
+    function resizeMap() {
+      const img = document.getElementById("introImage");
+      const map = document.querySelector("map");
+      const areas = map.getElementsByTagName("area");
+
+      const originalWidth = 2000; // ← updated with your image's original width
+      const originalHeight = 1400; // ← updated with your image's original height
+
+      const currentWidth = img.clientWidth;
+      const currentHeight = img.clientHeight;
+
+      const widthRatio = currentWidth / originalWidth;
+      const heightRatio = currentHeight / originalHeight;
+
+      for (let area of areas) {
+        const originalCoords = area.dataset.originalCoords.split(',').map(Number);
+        const scaledCoords = originalCoords.map((coord, index) =>
+          index % 2 === 0
+            ? Math.round(coord * widthRatio)
+            : Math.round(coord * heightRatio)
+        );
+        area.setAttribute("coords", scaledCoords.join(','));
+      }
+    }
+
+    window.addEventListener("load", () => {
+      // store original coords in data-* attribute so we can always recalculate from original
+      const areas = document.querySelectorAll("area");
+      areas.forEach(area => {
+        area.dataset.originalCoords = area.coords;
+      });
+      resizeMap();
+    });
+
+    window.addEventListener("resize", resizeMap);
+  </script>
+</body>
+</html>

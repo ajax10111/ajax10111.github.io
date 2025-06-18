@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>24 Hour Diner</title>
+  <link rel="stylesheet" href="storystyle.css">
+  <style>
+    body {
+      text-align: center;
+      margin: 0;
+      padding: 20px;
+      font-family: sans-serif;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      margin-top: 20px;
+    }
+
+    .choice-container {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      margin-top: 20px;
+      flex-wrap: wrap;
+    }
+
+    .choice-box {
+      padding: 16px 24px;
+      background-color: #f0f0f0;
+      border: 2px solid #333;
+      border-radius: 8px;
+      text-decoration: none;
+      color: #000;
+      font-weight: bold;
+      transition: background-color 0.3s ease;
+    }
+
+    .choice-box:hover {
+      background-color: #ddd;
+    }
+
+    p {
+      max-width: 600px;
+      margin: 0 auto;
+      line-height: 1.6;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>24 Hour Diner</h1>
+
+  <p>
+    You decide to open a 24 hour diner, and call it “Daybreak.” 
+    <br><br>
+
+    To keep things simple, you only sell pancakes, bacon by the pound, fresh grapefruit, and black coffee. 
+    <br><br>
+
+    Starting out, you work by yourself, and do all the positions. But as more truckers begin to come and Daybreak becomes more popular, you realize you need to hire more people. 
+    <br><br>
+
+    You hire three employees, but soon they all ask for a raise! Do you pay your employees a very nice salary and take less profit, or defy their wishes, pay them below the table at a wage far beneath the legal minimum, and profit much more? 
+    <br><br>  
+
+    However, a criminal group approaches you, calling themselves 'The Mangos.' They're new to the city, but are looking for a new place to run their illegal poker games! They offer you a sizeable cut if you let them run their games after hours. You could be rich, and pay your staff a lot if it works out.
+  </p>
+
+  <br>
+  <span class="bank-balance mustard">BANK BALANCE: $34,005.23</span>
+
+  <br><br>
+  <img src="https://cdn.glitch.global/cb7d669d-fb44-492e-95de-9bed7e896bf8/diner%20resized.png?v=1746422676266" alt="diner">
+
+  <div class="choice-container">
+    <a href="rich.html" class="choice-box">Profit Much More</a>
+    <a href="broke.html" class="choice-box">Pay A Good Salary</a>
+    <a href="jail.html" class="choice-box">Work With The Mangos</a>
+  </div>
+
+</body>
+</html>

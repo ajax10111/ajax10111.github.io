@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Restaurant</title>
+  <link rel="stylesheet" href="storystyle.css">
+  <style>
+    body {
+      text-align: center;
+      margin: 0;
+      padding: 20px;
+      font-family: sans-serif;
+    }
+
+    p {
+      max-width: 700px;
+      margin: 0 auto;
+      line-height: 1.6;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      margin-top: 20px;
+    }
+
+    .bank-balance {
+      display: inline-block;
+      font-weight: bold;
+      margin-top: 20px;
+    }
+
+    .choice-container {
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      margin-top: 30px;
+      flex-wrap: wrap;
+    }
+
+    .choice-box {
+      padding: 16px 24px;
+      background-color: #f0f0f0;
+      border: 2px solid #333;
+      border-radius: 8px;
+      text-decoration: none;
+      color: #000;
+      font-weight: bold;
+      transition: background-color 0.3s ease;
+      min-width: 200px;
+      text-align: center;
+    }
+
+    .choice-box:hover {
+      background-color: #ddd;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Restaurant</h1>
+
+  <p>
+    You decide to talk to the friendly man drinking the soda. 
+    <br><br>
+
+    He introduces himself as Ricky, and says he’s been in the restaurant business for over 134 years! 
+    <br><br>
+
+    As you try to figure out how that’s possible, the bartender kicks out the creepy man — apparently, he was trying to mine Bitcoin on his computer at the table!
+    <br><br>
+
+    Ricky tells you he only needs $350,000 to get you started with a restaurant. 
+    <br><br>
+
+    You just have to choose either a 24-hour diner or a pizza restaurant.
+  </p>
+
+  <span class="bank-balance positive">BANK BALANCE: $500,000</span>
+
+  <br><br>
+  <img src="https://cdn.glitch.global/cb7d669d-fb44-492e-95de-9bed7e896bf8/niceman.png?v=1746423242961" alt="restaurant guy">
+
+  <div class="choice-container">
+    <a href="pizza.html" class="choice-box">Pizza Restaurant</a>
+    <a href="diner.html" class="choice-box">24 Hour Diner</a>
+  </div>
+
+</body>
+</html>
